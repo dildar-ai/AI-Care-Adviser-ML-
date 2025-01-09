@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About AI Care Adviser</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image:url({{ url_for('static', filename='image.jpg') }});
+            background-size: cover;            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        section {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .section-content {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+  <div class="container my-4 mt-4" style="background-color:rgba(0,0,0,0.5);color:white;border-radius:10px; max-width:1000px; margin:auto;">
+    <header>
+        <h1 style="font-size: 40px;"><strong>About AI Care Adviser</strong></h1>
+        <p>An intelligent healthcare solution</p>
+    </header>
+    <section>
+        <h2>Project Overview</h2>
+        <div class="section-content">
+            <p>The <strong>AI Care Adviser</strong> is a smart healthcare tool that predicts diseases based on symptoms and provides personalized advice on medications, diet, precautions, and workouts. Designed to make healthcare more accessible, it combines machine learning with a user-friendly interface to offer reliable recommendations.</p>
+        </div>
+
+        <h2>Key Features</h2>
+        <div class="section-content">
+            <ul>
+                <li>Disease prediction based on user-input symptoms.</li>
+                <li>Personalized medication, dietary plans, and workout suggestions.</li>
+                <li>Precautionary measures to improve well-being.</li>
+                <li>Interactive and intuitive web application interface.</li>
+            </ul>
+        </div>
+
+        <h2>Technical Details</h2>
+        <div class="section-content">
+            <p>The project leverages a machine learning model trained on a dataset containing:</p>
+            <ul>
+                <li>Symptoms as attributes.</li>
+                <li>Prognosis (disease) as the class label.</li>
+                <li>Descriptions, diets, medications, precautions, and workouts for each disease.</li>
+            </ul>
+            <p>The web app is built with a Python backend and an HTML/CSS frontend. The model's predictions are integrated seamlessly into the UI for real-time suggestions.</p>
+        </div>
+
+        <h2>Purpose</h2>
+        <div class="section-content">
+            <p>The goal of this project is to provide individuals with a simple, effective tool for preliminary disease detection and health management. It aims to bridge the gap between professional medical care and initial self-assessment.</p>
+        </div>
+    </section>
+  </div>
+    <footer>
+        <p>© 2024 AI Care Adviser | Designed by Hussain Dildar</p>
+    </footer>
+</body>
+</html>
